@@ -1,0 +1,80 @@
+*{
+	box-sizing: border-box;
+}
+
+.green{
+	border: solid #6AC5AC 5px;
+}
+
+.red{
+	border: solid #D64078 5px;
+}
+
+.box{
+	min-width: 500px;
+	min-height: 300px;
+}
+
+.static{
+	/*Static is the default and will just stack*/
+	position: static;
+}
+
+.relative{
+	position: relative;
+	width: 500px;
+	top: -100px;
+	left: 200px;
+}
+
+.fixed{
+	position: fixed;
+	top: 100px;
+	right: 20px;
+}
+
+.relative2{
+	position: relative;
+}
+
+.absolute{ 
+	width: 200px;
+	min-height: 50px;
+	position: absolute;
+	right: 100px;
+	bottom: 10px;
+}
+
+
+/*positioning activity*/
+
+.boxMain{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.absoluteLeft{ 
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	left: 100px;
+	bottom: 50px;
+}
+
+.absoluteRight{ 
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 100px;
+	top: 100px;
+}
+
+
+/*absolute is fixed to it's closest relative element/div (parent or body) */
+
+/*static: Default value. Elements render in order, as they appear in the document flow    
+absolute: The element is positioned relative to its first positioned (not static) ancestor element    
+fixed: The element is positioned relative to the browser window    
+relative: The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position
+*/
